@@ -1,0 +1,89 @@
+{
+	"info": {
+		"_postman_id": "5ea518c5-e8eb-4386-bbc3-b4abc93aec58",
+		"name": "Attos",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "6040544"
+	},
+	"item": [
+		{
+			"name": "BuscaPorID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/pessoas/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"pessoas",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Cadastrar",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\r\n{\r\n    \"nomeCompleto\": \"Pedro Oliveira\",\r\n    \"dataNascimento\": \"1988-11-30\",\r\n    \"enderecos\": [\r\n        {\r\n        \"logradouro\": \"Praça C\",\r\n        \"cep\": \"98765-432\",\r\n        \"numero\": \"300\",\r\n        \"cidade\": \"Belo Horizonte\",\r\n        \"estado\": \"MG\"\r\n    },\r\n    {\r\n        \"logradouro\": \"Praça C\",\r\n        \"cep\": \"98765-432\",\r\n        \"numero\": \"300\",\r\n        \"cidade\": \"Belo Horizonte\",\r\n        \"estado\": \"MG\"\r\n    }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/pessoas/salvar",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"pessoas",
+						"salvar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Atualizar",
+			"request": {
+				"method": "PUT",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Atualiza Endereço Principal",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/pessoas/1/endereco-principal/4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"pessoas",
+						"1",
+						"endereco-principal",
+						"4"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
