@@ -2,7 +2,7 @@ spring:
   application:
     name: sgp
   datasource:
-    url: c
+    url: jdbc:h2:mem:testdb
     driver-class-name: org.h2.Driver
     username: sa
     password: attus123

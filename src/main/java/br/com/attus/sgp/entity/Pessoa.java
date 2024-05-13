@@ -24,11 +24,11 @@ public class Pessoa {
 
     private String nomeCompleto;
     private String dataNascimento;
+    
+    @OneToOne(cascade = CascadeType.ALL)
+    private Endereco enderecoPrincipal;
 
     @OneToMany(cascade = CascadeType.ALL)
     private List<Endereco> enderecos = new ArrayList<>();
-
-    @OneToOne(cascade = CascadeType.ALL)
-    private Endereco enderecoPrincipal;
 
 }
