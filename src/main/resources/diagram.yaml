@@ -1,0 +1,27 @@
++---------------------------------+
+|             Pessoa              |
++---------------------------------+
+| - nomeCompleto: String          |
+| - dataNascimento: LocalDate     |
+| - enderecos: List<Endereco>     |
+| - enderecoPrincipal: Endereco   |
++---------------------------------+
+| + consultaPorId(Long id):       |
+| + salvarPessoa(Pessoa pessoa)   |
+| + definirEnderecoPrincipal(     |
+|  Long id Endereco):             |
+| + atualizarPessoaEEndereco(     |
+|	Long id Pessoa):              |
++---------------------------------+
+
++----------------------------+
+|          Endereco          |
++----------------------------+
+| - logradouro: String       |
+| - cep: String               |
+| - numero: String            |
+| - cidade: String            |
+| - estado: String            |
+| - pessoa: Pessoa            |
++----------------------------+
+
